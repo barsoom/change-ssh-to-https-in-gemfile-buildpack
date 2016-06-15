@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -e
+
+cat $1/Gemfile | sed 's/git@github.com:/https:\/\/github.com\//g' > $1//tmp/Gemfile.new
+cat $1/Gemfile.lock | sed 's/git@github.com:/https:\/\/github.com\//g' > $1//tmp/Gemfile.lock.new
+
+mv $1//tmp/Gemfile.new $1/Gemfile
+mv $1//tmp/Gemfile.lock.new $1/Gemfile.lock
