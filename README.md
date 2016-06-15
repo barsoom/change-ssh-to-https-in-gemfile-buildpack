@@ -6,7 +6,7 @@ This is a buildpack that you can use if you can't change your Gemfile from havin
 
 If you have code to detect the environment and dynamically change paths in `Gemfile`, bundler will say:
 
-E.g. `You are trying to install in deployment mode after changing your Gemfile. Run `bundle install` elsewhere and add the updated Gemfile.lock to version control.`
+E.g. `You are trying to install in deployment mode after changing your Gemfile. Run bundle install elsewhere and add the updated Gemfile.lock to version control.`
 
 ## Installing
 
