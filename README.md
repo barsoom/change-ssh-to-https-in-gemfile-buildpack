@@ -1,6 +1,6 @@
 # Heroku buildpack
 
-This is a buildpack that you can use if you can't change your Gemfile from having git@github.com paths to using https://github.com/, but would like to use <https://github.com/timshadel/heroku-buildpack-github-netrc> to access private gems when deploying to heroku.
+This is a buildpack that you can use if you can't change your Gemfile from git@github.com to https://github.com/ paths, but would like to use <https://github.com/timshadel/heroku-buildpack-github-netrc> to access private gems when deploying to heroku.
 
 ## This works around this bundler feature:
 
