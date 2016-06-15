@@ -4,5 +4,7 @@ set -e
 cat $1/Gemfile | sed 's/git@github.com:/https:\/\/github.com\//g' > $1//tmp/Gemfile.new
 cat $1/Gemfile.lock | sed 's/git@github.com:/https:\/\/github.com\//g' > $1//tmp/Gemfile.lock.new
 
+echo "-----> Replacing \"git@github.com:\" with \"https://github.com/\" in Gemfile and Gemfile.lock"
+
 mv $1//tmp/Gemfile.new $1/Gemfile
 mv $1//tmp/Gemfile.lock.new $1/Gemfile.lock
